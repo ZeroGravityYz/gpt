@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ToolBoxes CostoCenters</title>
+
+    <style>
+
+    body {
+
+        font-family: Arial, sans-serif;
+
+        line-height: 1.6;
+
+        background-color: #f4f4f4;
+
+        padding: 20px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+
+        height: 100vh;
+
+        margin: 0;
+
+    }
+
+    h1 {
+
+        text-align: center;
+
+        margin-bottom: 20px;
+
+    }
+
+    .grid-container {
+
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 20px;
+
+        margin-bottom: 20px;
+
+    }
+
+    .navbar {
+
+        position: fixed;
+
+        top: 0;
+
+        left: 0;
+
+        width: 100%;
+
+        background-color: #333;
+
+        padding: 2px 0;
+
+        z-index: 1000;
+
+        transition: top 0.3s ease-in-out;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        padding: 10px;
+
+    }
+
+    .navbar img {
+
+        order: -1;
+
+    }
+
+    .navbar h1 {
+
+        margin: 0 10px;
+
+        color: #fff;
+
+    }
+
+    .navbar-menu {
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: space-between;
+
+        width: 24px;
+
+        height: 18px;
+
+        margin-left: 10px;
+
+    }
+
+    .navbar-menu div {
+
+        width: 100%;
+
+        height: 3px;
+
+        background-color: #fff;
+
+    }
+
+    .grid-item {
+
+        background-color: #333;
+
+        padding: 20px;
+
+        border-radius: 5px;
+
+        text-align: center;
+
+        min-height: 100px;
+
+        position: relative;
+
+    }
+
+    .grid-item a {
+
+        display: block;
+
+        text-decoration: none;
+
+        color: #fff;
+
+        font-weight: bold;
+
+        font-size: 18px;
+
+    }
+
+    .grid-item img {
+
+        display: block;
+
+        width: 150px;
+
+        height: auto;
+
+        margin-top: 10px;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+        border-radius: 10px;
+
+    }
+
+    .dropdown {
+
+        position: relative;
+
+        display: inline-block;
+
+    }
+
+    .dropdown-content {
+
+        display: none;
+
+        position: absolute;
+
+        right: 0;
+
+        background-color: #f9f9f9;
+
+        min-width: 160px;
+
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
+        z-index: 1;
+
+        text-align: right;
+
+    }
+
+    .dropdown-header {
+
+        padding: 12px 16px;
+
+        font-weight: bold;
+
+        background-color: #f9f9f9;
+
+        border-bottom: 1px solid #ccc;
+
+    }
+
+    .dropdown-content a {
+
+        display: block;
+
+        position: static;
+
+        background-color: transparent;
+
+        padding: 12px 16px;
+
+        text-decoration: none;
+
+        color: black;
+
+    }
+
+    .dropdown-content a:hover {
+
+        background-color: #f1f1f1;
+
+    }
+
+    .dropdown:hover .dropdown-content {
+
+        display: block;
+
+    }
+
+    .spacer {
+
+        height: 80px;
+
+    }
+
+    .main-content {
+
+        margin-top: 200px;
+
+    }
+
+</style>
+
+
+
+
+
+
+
+    
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+
+
+   <header class="navbar">
+
+    <img src="https://www.costockage.fr/image/costockage_logo.svg" alt="logo" style="max-height: 50px;">
+
+    <h1>ToolBoxes</h1>
+
+    <div class="dropdown">
+
+        <div class="navbar-menu">
+
+            <div></div>
+
+            <div></div>
+
+            <div></div>
+
+        </div>
+
+        <div class="dropdown-content">
+
+            <div class="dropdown-header">Accès rapide</div>
+
+            <a href="#camera">Caméra</a>
+
+            <a href="#maps">Maps</a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="spacer"></div>
+
+
+
+
+
+      <div class="main-content"> <div class="grid-container">
+
+
+
+        <div class="grid-item">
+
+            <a href="https://sites.google.com/costockage.fr/argenteuil/accueil" target="_blank">
+
+                <span>ARGENTEUIL</span>
+
+                <img src="https://lh3.googleusercontent.com/p/AF1QipMrAJeQWw_ozOhMuCb9NXu9NVQb7WT3-3BFHfrq=w1080-h608-p-no-v0" alt="Image Argenteuil">
+
+            </a>
+
+        </div>
+
+                <div class="grid-item">
+
+            <a href="https://sites.google.com/costockage.fr/costocentre-coignieres/accueil" target="_blank">
+
+                COIGNIERES
+
+                <img src="https://lh3.googleusercontent.com/DDmNdbrNt8gxl7rzDHe6YF503UMa-WZHVQB4TZX8gK8rueB3a5RzMSW49EmLC5GJ98hgwEhM1U1Kf5xCjmuUY82FCBEWyHcPDZecd4rwxdA1lgV8QlbTGR8OapbiAK07vQ=w1280" alt="Image Coignieres">
+
+            </a>
+
+        </div>
+
+                <div class="grid-item">
+
+            <a href="https://sites.google.com/costockage.fr/toolbox-frejus/accueil" target="_blank">
+
+                FREJUS
+
+                <img src="https://i.ibb.co/TY5G2jm/image.jpg" alt="Image Fejus">
+
+            </a>
+
+        </div>
+
+        <div class="grid-item">
+
+            <a href="https://sites.google.com/costockage.fr/toolboxgardanne/accueil" target="_blank">
+
+                GARDANNE
+
+                <img src="https://i.ibb.co/S5Ym9Kg/Untitled.jpg" alt="Image Gardanne">
+
+            </a>
+
+        </div>
+
+        <div class="grid-item">
+
+            <a href="https://sites.google.com/costockage.fr/osny/accueil" target="_blank">
+
+                OSNY
+
+                <img src="https://lh3.googleusercontent.com/p/AF1QipPcjYIfpn9tiADim5HmmS5OM1SaeJjQ4xtXzYBj=w1080-h608-p-no-v0" alt="Image Osny">
+
+            </a>
+
+        </div>
+
+        <div class="grid-item">
+
+            <a href="https://sites.google.com/costockage.fr/toolbox-vitry/accueil" target="_blank">
+
+                VITRY
+
+                <img src="https://lh3.googleusercontent.com/p/AF1QipNBZ84ouVS7zEwNC_a-y76GR11Vd65iXLMghjjt=w1080-h608-p-no-v0" alt="Image Vitry">
+
+            </a>
+
+        </div>
+
+        <div class="grid-item">
+
+            <a href="https://sites.google.com/costockage.fr/paradis/accueil" target="_blank">
+
+                PARADIS-HAUTEVILLE
+
+                <img src="https://lh3.googleusercontent.com/p/AF1QipMhNzn3_TApLEoDB4EPNp1jfTUmN1tQPhmmV1Pr=w1080-h608-p-no-v0" alt="Image Paradis Hauteville">
+
+            </a>
+
+        </div>
+
+        <div class="grid-item">
+
+            <a href="https://sites.google.com/costockage.fr/toolbox-paris10/accueil" target="_blank">
+
+                PARADIS-MARTEL
+
+                <img src="https://lh3.googleusercontent.com/p/AF1QipOFXw8FVUfKhnIBmY8hC1cz03yZjraD73UEdDer=s1360-w1360-h1020" alt="Image Paradis Martel">
+
+            </a>
+
+        </div>
+
+                <div class="grid-item">
+
+            <a href="https://sites.google.com/costockage.fr/toolboxbdcharonne/accueil" target="_blank">
+
+                Bd CHARONNE
+
+                <img src="https://ucarecdn.com/6a83f8d8-685b-4095-afca-47b54439d2f7/-/preview/-/format/auto/-/quality/lighter/-/progressive/yes/-/max_icc_size/1024/" alt="Image Charonne">
+
+            </a>
+
+        </div>
+
+        <div class="grid-item">
+
+            <a href="https://sites.google.com/costockage.fr/toolboxroubaix/accueil" target="_blank">
+
+                ROUBAIX
+
+                <img src="https://costo-static-files.s3-eu-west-1.amazonaws.com/image/data/user/117534/Box-qualite-pro-Roubaix-1662990685-678x383.jpg" alt="Image Ruubaix">
+
+            </a>
+
+        </div>
+
+        <div class="grid-item">
+
+            <a href="https://sites.google.com/costockage.fr/toolbox-dunkerque/accueil" target="_blank">
+
+                DUNKERQUE
+
+                <img src="https://lh6.googleusercontent.com/J2DYd-y8GjpWKirpVfskS74tVkorOgqRtcAva6KBsI3jvM2PAzVueCrvy8FBNV3QlUjiUOaWTLSeOdDNio1NwGgl_JluMfK6tWLRZLblG4pIr-c9Hr-k0fM3jVSd9lQZyQ=w1280" alt="Image Dunkerque">
+
+            </a>
+
+        </div>
+
+        <div class="grid-item">
+
+            <a href="https://sites.google.com/costockage.fr/toolbox-limonest/accueil?authuser=0" target="_blank">
+
+                LIMONEST- LYON BOX
+
+                <img src="https://lh5.googleusercontent.com/nizC17ghYxzXSTiq291Z6lXH4r_Iz-4V_C92ofRpJLl5L7OZGumfAPL_iL92pOMCPaIFuuFraaLD4l7gHTeJz4ILIR8Avux7EW2XGTYtFJkKC9hmyQy_ooyxqfA-PSZ8gQ=w1280" alt="Image Lyon">
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <div class="footer-link">
+
+        <a href="https://docs.google.com/spreadsheets/u/0/d/1BCCnJC6sx6erAyfQ61jBoDnQG9eAUX0rpf5tXCszXaw/edit#gid=0" target="_blank">Adresses Facturation CC</a>
+
+    </div>
+
+
+
+<script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+        const navbar = document.querySelector(".navbar");
+
+        let lastScrollTop = 0;
+
+
+
+        window.addEventListener("scroll", function () {
+
+            let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (currentScrollTop > lastScrollTop) {
+
+        // L'utilisateur fait défiler vers le bas
+
+        navbar.style.top = "-200px"; // cache la navbar (ajustez cette valeur en fonction de la hauteur de votre en-tête)
+
+    } else {
+
+        // L'utilisateur fait défiler vers le haut
+
+        navbar.style.top = "0"; // montre la navbar
+
+    }
+
+    lastScrollTop = currentScrollTop;
+
+});
+
+});
+
+</script>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
